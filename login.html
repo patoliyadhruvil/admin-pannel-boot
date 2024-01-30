@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+	   <title>Gogi - Admin and Dashboard Template</title>
+	   <!-- icon -->
+	   <link href="images/favicon.png" rel="icon" type="favicon.png">
+	   <!-- bootstrap file -->
+	   <link href="css/bootstrap.min.css" rel="stylesheet">
+	   <!-- css -->
+	   <link href="css/style.css" rel="stylesheet">
+	   <!-- fonts -->
+	   <link href="css/fonts.css" rel="stylesheet">
+	   <!-- icons-->
+	   <link href="css/all.min.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="page-wrapper form-wraper w-100 v-100 vh-100 d-flex align-items-center justify-content-center">
+		<div class="card w-25">
+			<div class="card-body">
+				<div class="logo text-center mb-5 mt-5">
+					<a href="#">
+						<img src="images/dark-logo.png" alt="img">
+					</a>
+				</div>
+				<h2 class="text-center">Sign in</h2>
+				<form>
+				    <div class="mb-4">
+						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Username or email">
+				  </div>
+				  <div class="mb-4">
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Remember me</label>
+					<a href="#" class="text-dark tag">Reset password</a>
+				  </div>
+				  <button type="submit" class="btn btn-primary btn-block mt-2">Sign in</button>
+				  <hr>
+				  <p class="text-center option mb-3">Login with your social media account.</p>
+				  <ul class="list-inline">
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-facebook bg-primary">
+								<i class="fa-brands fa-facebook"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-twitter">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-dribbble">
+								<i class="fa-solid fa-basketball"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-linkedin">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-google">
+								<i class="fa-brands fa-google"></i>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a href="#" class="btn btn-floating btn-behance">
+								<i class="fa-brands fa-behance"></i>
+							</a>
+						</li>
+					</ul>
+					<hr>
+					<p class="text-center option">Don't have an account?</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/apexcharts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+		<script>
+			$(".slidebar-dropdown > a").click(function(){
+				$(".slidebar-dropdown-menu").slideUp(200);
+				if($(this).parent().hasClass("active")){
+				$(".slidebar-dropdown").removeClass("active");
+				$(this).parent().removeClass("active");
+				}
+				else{
+					$(".slidebar-dropdown").removeClass("active");
+					$(this).next(".slidebar-dropdown-menu").slideDown(200);
+					$(this).parent().addClass("active");
+				}
+			});
+		</script>
+	
+		<script>
+			$(".slidebar-subdrop > a").click(function(){
+				$(".slidebar-subdrop-menu").slideUp(200);
+				if($(this).parent().hasClass("active")){
+				$(".slidebar-subdrop").removeClass("active");
+				$(this).parent().removeClass("active");
+				}
+				else{
+					$(".slidebar-subdrop").removeClass("active");
+					$(this).next(".slidebar-subdrop-menu").slideDown(200);
+					$(this).parent().addClass("active");
+				}
+			});
+		</script>
+	</body>
+</html>
